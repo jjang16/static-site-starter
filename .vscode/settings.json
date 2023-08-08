@@ -1,0 +1,49 @@
+{
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true,
+        "source.fixAll.stylelint": true
+    },
+    "explorer.confirmDragAndDrop": false,
+    "eslint.workingDirectories": [
+        "./"
+    ],
+    "eslint.lintTask.options": ".eslintrc.json",
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+    ],
+    "eslint.format.enable": true,
+    "stylelint.enable": true,
+    "stylelint.config": null,
+    "stylelint.validate": [
+        "less",
+        "css",
+        "sass",
+        "scss",
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+    ],
+    "css.validate": true,
+    "less.validate": true,
+    "scss.validate": true,
+    "prettier.documentSelectors": [
+        "{.js, .jsx, .css, .less, .scss, .sass, .ts, .tsx, .cjs, .mjs, .json}"
+    ],
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    },
+    "typescript.tsdk": "./node_modules/typescript/lib",
+    "typescript.enablePromptUseWorkspaceTsdk": true
+}

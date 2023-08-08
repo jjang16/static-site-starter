@@ -1,0 +1,7 @@
+**/node_modules/**/*
+static/**/*
+temp/**/*
+src/sw.js
+src/**/*.raw.js
+bin/**/*
+src/html.js

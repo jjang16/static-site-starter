@@ -1,0 +1,31 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-css-modules",
+    "stylelint-config-prettier"
+  ],
+  "ignoreFiles": [
+    "**/*.svg",
+    "node_modules/**",
+    "public/**",
+    ".cache/**",
+    "temp/**",
+    "**/*.js",
+    "**/*.ts",
+    "**/*.jsx",
+    "**/*.tsx"
+  ],
+  "overrides": [
+    {
+      "files": ["*.less", "**/*.less"],
+      "customSyntax": "postcss-less",
+      "rules": {
+        "selector-class-pattern": null,
+        "import-notation": null,
+        "selector-pseudo-class-no-unknown": null,
+        "no-descending-specificity": null,
+        "media-query-no-invalid": null
+      }
+    }
+  ]
+}

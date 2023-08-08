@@ -1,0 +1,60 @@
+{
+  "name": "static-site-starter",
+  "version": "1.0.0",
+  "description": "gatsby + typescript + less + lint",
+  "author": "Jae Won Jang",
+  "engines": {
+    "node": "20"
+  },
+  "packageManager": "yarn@3.2.3",
+  "browserslist": [
+    "supports es6-module",
+    "not ie <= 11",
+    "not op_mini all",
+    "not dead"
+  ],
+  "scripts": {
+    "lint:js": "eslint --ignore-path .eslintignore \"src/**/*.+(ts|tsx|js|jsx|cjs|mjs|json)\"",
+    "lint:css": "stylelint --ignore-path .eslintignore \"src/**/*.+(css|sass|scss|less)\"",
+    "prettier": "prettier --check --ignore-path .eslintignore \"src/**/*.+(ts|tsx|js|jsx|cjs|mjs|json|css|sass|scss|less)\"",
+    "typecheck": "tsc --noEmit",
+    "lint": "yarn lint:js && yarn lint:css && yarn prettier && yarn typecheck",
+    "clean": "rm -rf temp && gatsby clean",
+    "dev": "yarn clean && cross-env ENVIRONMENT=development && gatsby develop -H 0.0.0.0 -p 8000 --https --key-file ${DEV_CERT_KEY} --cert-file ${DEV_CERT}",
+    "package": "yarn clean && cross-env ENVIRONMENT=production gatsby build --verbose"
+  },
+  "dependencies": {
+    "gatsby": "^5.11.0",
+    "gatsby-plugin-less": "^7.11.0",
+    "gatsby-plugin-minify-classnames": "^5.0.0",
+    "gatsby-plugin-purgecss": "^6.2.1",
+    "gatsby-plugin-react-svg": "^3.3.0",
+    "less-plugin-clean-css": "^1.5.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.1.6",
+    "webpack": "^5.88.2"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.22.10",
+    "@typescript-eslint/eslint-plugin": "^6.3.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.46.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-import-resolver-typescript": "^3.5.5",
+    "eslint-plugin-import": "^2.28.0",
+    "eslint-plugin-n": "^16.0.1",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-webpack-plugin": "^4.0.1",
+    "postcss-less": "^6.0.0",
+    "prettier": "^3.0.1",
+    "stylelint": "^15.10.2",
+    "stylelint-config-css-modules": "^4.3.0",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-config-standard": "^34.0.0",
+    "typescript-plugin-css-modules": "^5.0.1"
+  }
+}

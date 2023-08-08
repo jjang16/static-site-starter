@@ -1,0 +1,27 @@
+@hover-highlight-background-color: rgb(128 128 128 / 13%);
+
+/* TODO : need to setup all accessibility effects! especially hover and etc. */
+
+/*
+  anchor and button : 
+    hover 
+    focus-visible // user agent
+
+  input : 
+    focus 
+    focus-visible // user agent
+*/
+
+@media (hover: hover) and (pointer: fine) {
+  a:hover {
+    text-decoration: underline;
+  }
+
+  button:hover,
+  /* input[type='submit']:hover*/
+  [type='submit']:hover,
+  /* input[type='reset']:hover*/
+  [type='reset']:hover {
+    background-color: $hover-highlight-background-color;
+  }
+}
