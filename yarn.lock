@@ -107,7 +107,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/eslint-parser@npm:^7.19.1, @babel/eslint-parser@npm:^7.22.10":
+"@babel/eslint-parser@npm:^7.19.1":
   version: 7.22.10
   resolution: "@babel/eslint-parser@npm:7.22.10"
   dependencies:
@@ -3437,6 +3437,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@typescript-eslint/parser@npm:^6.3.0":
+  version: 6.3.0
+  resolution: "@typescript-eslint/parser@npm:6.3.0"
+  dependencies:
+    "@typescript-eslint/scope-manager": 6.3.0
+    "@typescript-eslint/types": 6.3.0
+    "@typescript-eslint/typescript-estree": 6.3.0
+    "@typescript-eslint/visitor-keys": 6.3.0
+    debug: ^4.3.4
+  peerDependencies:
+    eslint: ^7.0.0 || ^8.0.0
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: ec739adbe4a972a696b4a4625dc5c2f5b4e072968decdcafd0a9b972d0167007230951a6450becb52e187b1b90a2858debba26f73162e293f7846b373888b8e9
+  languageName: node
+  linkType: hard
+
 "@typescript-eslint/scope-manager@npm:5.62.0":
   version: 5.62.0
   resolution: "@typescript-eslint/scope-manager@npm:5.62.0"
@@ -6659,15 +6677,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-import-resolver-alias@npm:^1.1.2":
-  version: 1.1.2
-  resolution: "eslint-import-resolver-alias@npm:1.1.2"
-  peerDependencies:
-    eslint-plugin-import: ">=1.4.0"
-  checksum: 3fbb9aeda98335060bb438ed8446a060d282f80a365838a82edb1f8743b1d54c89303009c7717e3c915d5d722e57148082c5ada4455e811acdc8ed3a65059fa1
-  languageName: node
-  linkType: hard
-
 "eslint-import-resolver-node@npm:^0.3.7":
   version: 0.3.8
   resolution: "eslint-import-resolver-node@npm:0.3.8"
@@ -6843,7 +6852,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react@npm:^7.32.2":
+"eslint-plugin-react@npm:^7.32.2, eslint-plugin-react@npm:^7.33.1":
   version: 7.33.1
   resolution: "eslint-plugin-react@npm:7.33.1"
   dependencies:
@@ -13686,18 +13695,20 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "static-site-starter@workspace:."
   dependencies:
-    "@babel/eslint-parser": ^7.22.10
     "@typescript-eslint/eslint-plugin": ^6.3.0
+    "@typescript-eslint/parser": ^6.3.0
     cross-env: ^7.0.3
     eslint: ^8.46.0
     eslint-config-prettier: ^9.0.0
     eslint-config-standard: ^17.1.0
-    eslint-import-resolver-alias: ^1.1.2
     eslint-import-resolver-typescript: ^3.5.5
     eslint-plugin-import: ^2.28.0
+    eslint-plugin-jsx-a11y: ^6.7.1
     eslint-plugin-n: ^16.0.1
     eslint-plugin-prettier: ^5.0.0
     eslint-plugin-promise: ^6.1.1
+    eslint-plugin-react: ^7.33.1
+    eslint-plugin-react-hooks: ^4.6.0
     eslint-webpack-plugin: ^4.0.1
     gatsby: ^5.11.0
     gatsby-plugin-less: ^7.11.0

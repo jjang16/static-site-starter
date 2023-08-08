@@ -1,5 +1,5 @@
 {
-    "parser": "@babel/eslint-parser",
+    "parser": "@typescript-eslint/parser",
     "parserOptions": {
         "ecmaVersion": 2022,
         "sourceType": "module"
@@ -16,9 +16,12 @@
         "plugin:prettier/recommended"
     ],
     "plugins": [
+        "react",
+        "react-hooks",
         "@typescript-eslint/eslint-plugin",
         "import",
-        "prettier"
+        "prettier",
+        "jsx-a11y"
     ],
     "rules": {
         "react-hooks/exhaustive-deps": [
